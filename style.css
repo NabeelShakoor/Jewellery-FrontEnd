@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.nav{
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+.nav a{
+    font-weight: bolder;
+    text-decoration: none;
+    padding-left: 40px;
+    font-size: larger;
+    color: crimson;
+}
+.nav a:hover ,.active{
+    color: blue;
+}
+.active{
+    color: blue;
+}
+.carousel-inner img{
+    height: 80vh;
+}
+.card{
+    margin: 40px 0 20px 0 ;
+}
+.cds{
+    height: 100vh;
+}
+.cds a{
+    text-decoration: none;
+}
+.card img{
+    height: 320px;
+}
+.card-body{
+    color: black;
+    text-align: center;
+}
+
+.card:hover{
+    color: orangered;
+    margin-top: 30px;
+    -webkit-box-shadow: 8px 0px 0px 0px #DCD0C0, 0px 8px 0px 0px #B1938B, -8px 0px 0px 0px rgb(80, 80, 231), 0px 0px 0px 8px #DA635D, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 8px 0px 0px 0px #DCD0C0, 0px 8px 0px 0px #B1938B, -8px 0px 0px 0px rgb(80, 80, 231), 0px 0px 0px 8px #DA635D, 5px 5px 15px 5px rgba(0,0,0,0);
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIVO V23</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<style>
+    .product{
+        margin-top: 20px;
+    }
+    .product .thumb-img .box{
+        height: 100px;
+        width:100px;
+        border:2px solid #8ea1af;
+        margin:2px;
+        cursor: pointer;
+    }
+    .product .thumb-img .box.active{
+        border-color:#545454;
+        
+    }
+    .product .thumb-img .box img{
+          max-width: 100%;
+          max-height: 100%;
+    }
+    .thumb-img{
+        width: 109px;
+        display: flex;
+        flex-direction: column;
+    }
+    .main-img{
+        margin-top: 30px;
+        /* width: 200px; */
+        /* border:2px solid #8ea1af; */
+    }
+    .main-img img{
+        border: 2px solid #8ea1af ;
+        width: 25vw;
+        /* width: 50px; */
+    }
+    .foo label{
+        margin-right: 20px;
+    }
+    .foo{
+        padding-top: 10px;
+    }
+    #head1 {
+                background-color: rgb(207, 154, 40);
+                color: white;
+                padding: 10px;
+            }
+    #txtTotal {
+        width: 200px;
+        text-align: left;
+        height: 30px;
+        padding: 5px 5px;
+        font-size: 15px;
+        border: 1px solid grey;
+        margin-bottom: 10px;
+    }
+    .tabel-data{
+        display: flex;
+        justify-content: center;
+    }
+    .tabel-data table{
+        border: 2px;
+    }
+    .nav{
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+.nav a{
+    font-weight: bolder;
+    text-decoration: none;
+    padding-left: 40px;
+    font-size: larger;
+    color: crimson;
+}
+.nav a:hover ,.active{
+    color: blue;
+}
+.maindiv{
+    margin: 20px;
+}
+    </style>
+<body>
+    <div class="container-fluid ">
+        <div class="col-md-12">
+            <div class="nav">
+            <a class="active" href="index.html">Home</a>
+            <a href="">Wedding Rings</a>
+            <a href="">Engagement Rings</a>
+            <a href="">Women's Rings</a>
+            <a href="">Men's Rings</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="product">
+                   
+                            <div class="thumb-img">
+                                <div class="box active" onclick="changeImage(this)">
+                                   <img src="https://res.cloudinary.com/glamira/image/upload/c_limit,c_fill,dpr_1.0,f_auto,fl_lossy,q_auto,w_1100,h_1100/media/product/newgeneration/view/1/sku/neveda-n1/diamond/diamond-sapphire_AA/stone2/diamond-sapphire_AAA/alloycolour/white.jpg" alt="thumb" class="img-fluid"/>
+                                </div>
+                                <div class="box" onclick="changeImage(this)">
+                                   <img src="https://res.cloudinary.com/glamira/image/upload/c_limit,c_fill,dpr_1.0,f_auto,fl_lossy,q_auto,w_1100,h_1100/media/product/newgeneration/view/2/sku/neveda-n1/diamond/diamond-sapphire_AA/stone2/diamond-sapphire_AAA/alloycolour/white.jpg" alt="thumb" class="img-fluid" />
+                                </div>
+                                <div class="box" onclick="changeImage(this)">
+                                    <img src="https://res.cloudinary.com/glamira/image/upload/c_limit,c_fill,dpr_1.0,f_auto,fl_lossy,q_auto,w_1100,h_1100/media/product/newgeneration/view/3/sku/neveda-n1/diamond/diamond-sapphire_AA/stone2/diamond-sapphire_AAA/alloycolour/white.jpg" alt="thumb" class="img-fluid" />
+                                 </div>
+                                 <div class="box" onclick="changeImage(this)">
+                                    <img src="https://res.cloudinary.com/glamira/image/upload/c_limit,c_fill,dpr_1.0,f_auto,fl_lossy,q_auto,w_1100,h_1100/media/product/newgeneration/view/4/sku/neveda-n1/diamond/diamond-sapphire_AA/stone2/diamond-sapphire_AAA/alloycolour/white.jpg" alt="thumb" class="img-fluid"/>
+                                 </div>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                           <div class="bnn">
+                            <div class="main-img">
+                                <img  src="https://res.cloudinary.com/glamira/image/upload/c_limit,c_fill,dpr_1.0,f_auto,fl_lossy,q_auto,w_1100,h_1100/media/product/newgeneration/view/1/sku/alondra-n-04/diamond/diamond-Brillant_AAA/stone2/diamond-Swarovsky_AAA/alloycolour/white.jpg" class="pro-img" alt="product" />
+                            </div>
+                           </div>
+                         </div>
+                </div>
+            </div>
+            <div class="col-md-6 foo">
+                <form action="" method="get">
+                    <h3>GLAMIRA RING NEVEDA</h3><br>
+                <label style="margin-right:5px ;"> <b>Today Gold Rate:</b></label> <input type="text" value="129000" name="rate" id="rate" disabled><br><br>
+                <label style="margin-right:60px ;"><b>Your Size:</b></label> <input type="number" value="12" name="size" id="size"><br><br>
+                <h4>Please choose weight Rings</h4>
+                <select style="width: 200px;" name="cmbProducts" id="cmbProducts" >
+                    <option value="0">Select Weight</option>
+                    <option value="2">2 Grams</option>
+                    <option value="3">3 Grams</option>
+                    <option value="4">4 Grams</option>
+                    </select><br><br>
+                 <label style="margin-right:55px ;"><b>Total Price</b></label>
+                 <div id="txtTotal"></div>
+                 <!-- <input type="text" name="txtTotal" id="txtTotal" value=""> -->
+                 <button type="button" onclick="addrow()" onclick="f2()">Check Price</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 tabel-data mt-3">
+        <table id="myCart" border="1px" class="text-center mb-5 table-bordered table table-dark" style="width: 600px;">
+            <tr>
+                <!-- <td id="head1">Product Name</td> -->
+                <td id="head1">Today Gold Rate</td>
+                <td id="head1">Weight</td>
+                <td id="head1">Size</td>
+                <td id="head1">Total Amount</td>
+            </tr>	
+        </table>
+    </div>
+   
+   
+   
+   <script>
+           const thumbs=document.querySelector(".thumb-img").children;
+   
+               function changeImage(event){
+               document.querySelector(".pro-img").src=event.children[0].src
+               
+               for(let i=0; i<thumbs.length;i++){
+                 thumbs[i].classList.remove("active");
+               }
+               event.classList.add("active");
+               }
+               function f2(){
+                let display = document.getElementById('txtTotal');
+                var s = document.getElementById("rate").value;
+                console.log("s", s)
+               var d = document.getElementById("cmbProducts").value;
+               console.log("d", d)
+               var total = s / 11.664 * d;
+               console.log("total", total)
+               display.innerText = total.toFixed(2);
+              }
+              function addrow(){
+                let display = document.getElementById('txtTotal');
+                var s = document.getElementById("rate").value;
+                var size = document.getElementById("size").value;
+               var d = document.getElementById("cmbProducts").value;
+               var total = s / 11.664 * d;
+               console.log("total", total)
+               display.innerText = total.toFixed(2);
+
+               var myTable = document.getElementById("myCart")
+
+                var myText = 
+                "<td>" + s + "</td>" +
+                "<td>" + d + " Gram" + "</td>" +
+                "<td>"  + size + "</td>" +
+                "<td>" + display.innerText + "</td>"
+                console.log(" myTable.innerHTML", myTable.innerHTML)
+                console.log("myText", myText)
+                myTable.innerHTML += myText
+                }
+   </script>      
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
